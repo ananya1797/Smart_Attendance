@@ -685,7 +685,11 @@ const Reports = (props) => {
       </div>
     );
   } else {
-    return <h1>Student Report Coming soon</h1>;
+    return(
+      <div>
+        <p>Reports to you will be sent by you respective admin, contact your admin.</p>
+      </div>
+    );
   }
 };
 

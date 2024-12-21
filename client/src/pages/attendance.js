@@ -247,6 +247,7 @@ import React, { useEffect, useState } from "react";
 import { Bar, Pie } from "react-chartjs-2";
 import "chart.js/auto"; // Automatically register Chart.js components
 import "bootstrap/dist/css/bootstrap.min.css";
+import StudentAttendance from './StudentAttendance'
 
 const Attendance = (props) => {
   const [attendanceSummary, setAttendanceSummary] = useState(null);
@@ -478,7 +479,7 @@ const Attendance = (props) => {
       </div>
     );
   } else {
-    return <h3>Not authorized</h3>;
+    return <StudentAttendance/>;
   }
 };
 
