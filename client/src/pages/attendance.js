@@ -478,7 +478,7 @@ const Attendance = (props) => {
       </div>
     );
   } else {
-    return <h3>Not authorized</h3>;
+   return <StudentAttendance/>;
   }
 };
 
