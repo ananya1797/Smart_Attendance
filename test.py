@@ -74,8 +74,6 @@ while True:
             "time": timestamp
         }
     imgBackground[162:162 + 480, 55:55 + 640] = frame
-    
-    # Display the frame
     cv2.imshow("Frame", imgBackground)
 
     k = cv2.waitKey(1)
