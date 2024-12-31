@@ -1,0 +1,96 @@
+/* Login.css */
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Centering Login Form */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('bg2.jpg') no-repeat center center fixed;
+    background-size:900px 800px;
+  }
+  
+  /* Making the login card semi-transparent */
+  .login-card {
+    background-color: rgba(255, 255, 255, 0.8); /* white with transparency */
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .login-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .login-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .sub-title {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.8rem;
+  }
+  
+  .form-label {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    font-weight: 500;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #6e7dff;
+  }
+  
+  .btn-login {
+    background-color: #6e7dff;
+    color: white;
+    padding: 1.2rem 2.4rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #5578e7;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  

@@ -80,7 +80,7 @@ function App() {
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
           <div className="container">
             <Link className="navbar-brand" to="/">
-              Smart Attendance System
+              <h1>MARKMATE</h1><h6>Take attendance the smart way!</h6>
             </Link>
             <div className="collapse navbar-collapse">
               <ul className="navbar-nav ms-auto">
