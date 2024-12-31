@@ -1,8 +1,11 @@
-1. start by enabling the mongodb server
-2. go to mongosh and go to database "attendance_system"
-3. in collection students-> student data like name,usn,face data is storeed
-4. in collection attendance-> the attendance marked will be storeed
-start by running add_faces.py if ur a new user, else start with test.py
-press 'o' for marking attendance
-press 'q' for quitting the frame
-the.csv file will be avaiable to you in the attendance folder
+How to execute when cloned:
+Start with setting a virtual environment:
+C:\Users\HP\Desktop\attendance system - knn\face_recognition_project\venv\Scripts\python.exe (my local file structure for python.exe in venv file)
+Add the above link by going to Command Pallette->Python: Select Interpreter-> Add venv path and eneter the path
+
+After the whole code is free from errors:
+execute server.js by giving node server.js command
+execute server2.js by giving node server2.js command
+cd client
+npm run start
+
