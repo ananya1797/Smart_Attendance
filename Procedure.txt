@@ -1,0 +1,11 @@
+How to execute when cloned:
+Start with setting a virtual environment:
+C:\Users\HP\Desktop\attendance system - knn\face_recognition_project\venv\Scripts\python.exe (my local file structure for python.exe in venv file)
+Add the above link by going to Command Pallette->Python: Select Interpreter-> Add venv path and eneter the path
+
+After the whole code is free from errors:
+execute server.js by giving node server.js command
+execute server2.js by giving node server2.js command
+cd client
+npm run start
+

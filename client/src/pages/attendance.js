@@ -233,11 +233,8 @@ const Attendance = (props) => {
         </div>
       </div>
     );
-  } else if(props.userType === 'student') {
-    return <StudentAttendance/>;
-  }
-  else{
-    return <p>Please Login to view.</p>
+  } else {
+   return <StudentAttendance/>;
   }
 };
 

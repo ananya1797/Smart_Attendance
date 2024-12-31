@@ -11,28 +11,6 @@ function StudentAttendance() {
     setUsn(e.target.value);
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setAttendanceData([]);
-  //   setErrorMessage('');
-    
-  //   if (!usn) {
-  //     setErrorMessage('Please enter a valid USN.');
-  //     return;
-  //   }
-
-  //   try {
-  //     const response = await axios.post('http://localhost:8000/attendance', { usn });
-  //     if (response.data.success) {
-  //       setAttendanceData(response.data.data);
-  //     } else {
-  //       setErrorMessage('No attendance records found for this USN.');
-  //     }
-  //   } catch (err) {
-  //     setErrorMessage('Error fetching attendance data.');
-  //   }
-  // };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     setAttendanceData([]);
@@ -42,11 +20,9 @@ function StudentAttendance() {
       setErrorMessage('Please enter a valid USN.');
       return;
     }
-  
+
     try {
       const response = await axios.post('http://localhost:8000/attendance', { usn });
-      console.log('Attendance Response:', response.data);  // Debugging log
-      
       if (response.data.success) {
         setAttendanceData(response.data.data);
       } else {
@@ -56,7 +32,6 @@ function StudentAttendance() {
       setErrorMessage('Error fetching attendance data.');
     }
   };
-  
 
   return (
     <div className="container mt-5">
@@ -108,3 +83,4 @@ function StudentAttendance() {
 }
 
 export default StudentAttendance;
+
